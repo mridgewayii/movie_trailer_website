@@ -1,6 +1,5 @@
 import webbrowser
 
-
 #Define Movie Class
 class Movie():
 	#Set order of strings to be passed to this class
