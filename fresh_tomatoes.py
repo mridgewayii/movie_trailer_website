@@ -2,6 +2,7 @@ import webbrowser
 import os
 import re
 
+
 # Styles and scripting for the page
 main_page_head = '''
 <!DOCTYPE html>
@@ -59,8 +60,7 @@ main_page_head = '''
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, 
-		 .modal', function (event) {
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
             // Remove the src so the player itself gets removed, as this is 
             // the only reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
